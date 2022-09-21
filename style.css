@@ -1,5 +1,6 @@
 body{
     display: flex;
+    flex-direction: column;
     align-items:center;
     justify-content: center;
 }
@@ -8,6 +9,14 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.container1{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
 }
 
 .board{
@@ -29,4 +38,13 @@ body{
     justify-content: center;
     font-size: 5rem;
     font-weight:bolder;
+}
+button{
+    width:220px !important;
+    height: 50px;
+}
+input{
+    height: 50px ;
+    width:50%;
+    border-radius: 10px;
 }
