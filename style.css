@@ -18,6 +18,13 @@ body{
     justify-content: center;
     width: 50%;
 }
+.container2{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
 
 .board{
     display: grid;
@@ -31,7 +38,6 @@ body{
 .box{
     width:100px;
     height:100px;
-    color:black;
     border: 2px solid black;
     display: flex;
     align-items: center;
@@ -47,4 +53,7 @@ input{
     height: 50px ;
     width:50%;
     border-radius: 10px;
+}
+.efect{
+color: aqua !important;
 }

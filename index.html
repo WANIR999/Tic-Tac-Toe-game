@@ -15,26 +15,29 @@
               <input class="mb-3" id="seconde" type="text" placeholder="Player2">
               <button class="btn btn-primary" onclick="startGame()">start</button>
         </div>
+
         <div class="container d-none" id="container2" >
             <h1>tic tac toe game</h1>
-            <h2 id="firstn"></h2>
-            <h2 id="seconden"></h2>
-            <div class="board">
-                <div class="box" id="0" onclick="clicked(this.id)"></div>
-                <div class="box" id="1" onclick="clicked(this.id)"></div>
-                <div class="box" id="2" onclick="clicked(this.id)"></div>
-                <div class="box" id="3" onclick="clicked(this.id)"></div>
-                <div class="box" id="4" onclick="clicked(this.id)"></div>
-                <div class="box" id="5" onclick="clicked(this.id)"></div>
-                <div class="box" id="6" onclick="clicked(this.id)"></div>
-                <div class="box" id="7" onclick="clicked(this.id)"></div>
-                <div class="box" id="8" onclick="clicked(this.id)"></div>
+            <div class="d-flex flex-row justify-content-between w-100">
+                <h2 id="firstn"></h2>
+                <h2 id="seconden"></h2>
             </div>
-            <button class="btn btn-primary mt-5" onclick="restart()">restart</button>
+            <div class="board">
+                <div class="box firstrow c1 i1" id="0" onclick="clicked(this.id)" ></div>
+                <div class="box firstrow c2" id="1" onclick="clicked(this.id)" ></div>
+                <div class="box firstrow c3 i2" id="2" onclick="clicked(this.id)" ></div>
+                <div class="box secondrow c1" id="3" onclick="clicked(this.id)" ></div>
+                <div class="box secondrow c2 i1 i2" id="4" onclick="clicked(this.id)" ></div>
+                <div class="box secondrow c3" id="5" onclick="clicked(this.id)" ></div>
+                <div class="box thirdrow c1 i2" id="6" onclick="clicked(this.id)" ></div>
+                <div class="box thirdrow c2" id="7" onclick="clicked(this.id)" ></div>
+                <div class="box thirdrow c3 i1" id="8" onclick="clicked(this.id)" ></div>
+            </div>
+            <button class="btn btn-primary mt-5" id="button" onclick="restart()">restart</button>
         </div>
       
    
  
-    <script src="script.js"></script>
+    <script src="script.js" onload="localStorage.clear()"></script>
 </body>
 </html>
